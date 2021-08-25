@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Editar Factura";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Seleccione los nuevos datos de la Factura</h1>
+    <br />
+    <h2 class="subtitle" data-aos="zoom-out" data-aos-delay="200">Complete el formulario</h2>
+    <h5 class="text-danger">@ViewData["Error"]</h5>
+    <br />
+</div>
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="BillingsEdit" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <input class="input" type="hidden" name="id" value="@Model.Billing.Id">
+                        <label class="label">Seleccionar producto</label>
+                        <div class="select is-fullwidth">
+                            <select name="productName">
+                                @foreach (var item in Model.Products)
+                                {
+                                    <option value="@item.Name">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Cantidad Comprada</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Cantidad comprada"
+                                       name="quantityBought"
+                                       value="@Model.Billing.QuantityBought">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <label class="label">Selecionar Cliente</label>
+                        <div class="select is-fullwidth">
+                            <select name="clientId">
+                                @foreach (var item in Model.Clients)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Descuento Premium</label>
+                            <div class="control">
+                                <input class="input"
+                                       type="text"
+                                       placeholder="Descuento Premium"
+                                       name="premiumDiscount"
+                                       value="@Model.Billing.PremiumDiscount">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Itbis</label>
+                            <div class="control">
+                                <input class="input"
+                                       type="text"
+                                       placeholder="Itbis"
+                                       name="itbis"
+                                       value="@Model.Billing.Itbis">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Total</label>
+                            <div class="control">
+                                <input class="input"
+                                       type="text"
+                                       placeholder="Total"
+                                       name="total"
+                                       value="@Model.Billing.Total">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

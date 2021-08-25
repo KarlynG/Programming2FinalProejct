@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Hacer Factura";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Realizar Factura</h1>
+    <br />
+</div>
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="FormBilling" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label">Seleccionar producto</label>
+                        <div class="select is-fullwidth">
+                            <select name="productName">
+                                @foreach (var item in Model.Products)
+                                {
+                                    <option value="@item.Name">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Cantidad Comprada</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Cantidad comprada" name="quantityBought">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <label class="label">Selecionar Cliente</label>
+                        <div class="select is-fullwidth">
+                            <select name="clientId">
+                                @foreach (var item in Model.Clients)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

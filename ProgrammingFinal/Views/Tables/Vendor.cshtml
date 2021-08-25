@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "Lista de proveedores";
+    string entity = "Vendor";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Todos los proveedores</h1>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <form action="VendorFiltered" method="post" enctype="multipart/form-data">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <label class="label">Filtrar por</label>
+                    <div class="select is-fullwidth">
+                        <select name="option">
+                            <option value="0">Nombre</option>
+                            <option value="1">Email</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Nombre</label>
+                        <div class="control">
+                            <input class="input"
+                                   type="text"
+                                   placeholder="Filtrar por nombre"
+                                   name="vendorName">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input"
+                                   type="text"
+                                   placeholder="Filtrar por email"
+                                   name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <button class="button is-medium" style="top:30px;">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-content">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Numero de telefono</th>
+                    <th>Email</th>
+                    <th>Cedula</th>
+                    <th class="has-text-centered">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <th>@item.Name</th>
+                        <th>@item.PhoneNumber</th>
+                        <th>@item.email</th>
+                        <th>@item.Document</th>
+                        <th>
+                            <div class="columns">
+                                <div class="column">
+                                    <button class="button is-warning is-fullwidth" onclick="location.href='@Url.Action($"VendorEdit", "TablesEdit", new { id = item.Id })'">Editar</button>
+                                </div>
+                                <div class="column">
+                                    <button class="button is-danger is-fullwidth" onclick="location.href='@Url.Action($"Delete{entity}", "TablesEdit", new { id = item.Id })'">Eliminar</button>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

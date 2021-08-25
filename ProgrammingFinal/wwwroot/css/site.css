@@ -1,0 +1,139 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+u-list a {
+    color: #0F1D38;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu-list a:hover {
+    background-color: transparent;
+    color: #276cda;
+}
+
+.menu-list a.is-active {
+    background-color: transparent;
+    color: #276cda;
+    font-weight: 700;
+}
+
+.card {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+}
+
+.card-header-title {
+    color: #8F99A3;
+    font-weight: 400;
+}
+
+.info-tiles {
+    margin: 1rem 0;
+}
+
+    .info-tiles .subtitle {
+        font-weight: 300;
+        color: #8F99A3;
+    }
+
+.hero.welcome.is-info {
+    background: #36D1DC;
+    background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);
+    background: linear-gradient(to right, #5B86E5, #36D1DC);
+}
+
+.hero.welcome .title, .hero.welcome .subtitle {
+    color: hsl(192, 17%, 99%);
+}
+
+.card .content {
+    font-size: 14px;
+}
+
+.card-footer-item {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8F99A3;
+}
+
+    .card-footer-item:hover {
+    }
+
+.card-table .table {
+    margin-bottom: 0;
+}
+
+.events-card .card-table {
+    max-height: 250px;
+    overflow-y: scroll;
+}

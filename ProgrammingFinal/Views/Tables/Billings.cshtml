@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewData["Title"] = "Lista De Facturas";
+    string entity = "Billing";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Todas las Facturas</h1>
+    <p class="subtitle is-4" data-aos="zoom-out">@ViewBag.Options</p>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <form action="BillingFiltered" method="post" enctype="multipart/form-data">
+            <div class="columns is-multiline">
+                <div class="column">
+                    <label class="label">Filtrar por</label>
+                    <div class="select is-fullwidth">
+                        <select name="option">
+                            <option value="0">Cliente</option>
+                            <option value="1">Fecha</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column">
+                    <label class="label">Elija un Cliente</label>
+                    <div class="select is-fullwidth">
+                        <select name="clientName">
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.ClientName">@item.ClientName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="field">
+                        <label class="label">Fecha</label>
+                        <div class="control">
+                            <input class="input"
+                                   type="date"
+                                   placeholder="Filtrar por fecha"
+                                   name="date">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <label class="label">Opciones extras</label>
+                    <div class="select is-fullwidth">
+                        <select name="extraOptions">
+                            <option value="0">Ninguna</option>
+                            <option value="1">Sumatoria</option>
+                            <option value="2">Conteo</option>
+                            <option value="3">Promedio</option>
+                            <option value="4">Valor máximo</option>
+                            <option value="5">Valor mínimo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column">
+                    <button class="button is-medium" style="top:30px;">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-content">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+                <tr>
+                    <th>Fecha de registro</th>
+                    <th>Nombre del cliente</th>
+                    <th>Nombre del producto</th>
+                    <th>Cantidad comprada</th>
+                    <th>Descuento Premium</th>
+                    <th>Itbis</th>
+                    <th>Total</th>
+                    <th class="has-text-centered">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <th>@item.BillingDate</th>
+                    <th>@item.ProductName</th>
+                    <th>@item.ClientName</th>
+                    <th>@item.QuantityBought</th>
+                    <th>@item.PremiumDiscount</th>
+                    <th>@item.Itbis</th>
+                    <th>@item.Total</th>
+                    <th>
+                        <div class="columns">
+                            <div class="column">
+                                <button class="button is-warning is-fullwidth" onclick="location.href='@Url.Action("BillingsEdit", "TablesEdit", new { id = item.Id })'">Editar</button>
+                            </div>
+                            <div class="column">
+                                <button class="button is-danger is-fullwidth" onclick="location.href='@Url.Action($"Delete{entity}", "TablesEdit", new { id = item.Id })'">Eliminar</button>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+

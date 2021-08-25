@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ProgrammingFinal</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/bulma/css/bulma.min.css" />
+    <link href="~/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                        Home
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Ver lista de...
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" asp-controller="Tables" asp-action="Client">
+                                Clientes
+                            </a>
+                            <a class="navbar-item" asp-controller="Tables" asp-action="Vendor">
+                                Proveedores
+                            </a>
+                            <a class="navbar-item" asp-controller="Tables" asp-action="Product">
+                                Productos
+                            </a>
+                            <a class="navbar-item" asp-controller="Tables" asp-action="Entries">
+                                Mercancias
+                            </a>
+                            <a class="navbar-item" asp-controller="Tables" asp-action="Billings">
+                                Facturas
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Reportar un problema
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Agregar...
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" asp-controller="Bussiness" asp-action="Client">
+                                Cliente
+                            </a>
+                            <a class="navbar-item" asp-controller="Bussiness" asp-action="Vendor">
+                                Proveedor
+                            </a>
+                            <a class="navbar-item" asp-controller="Bussiness" asp-action="Product">
+                                Producto
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Reportar un problema
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-primary">
+                                Ingresar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main-content columns is-fullheight">
+        <aside class="column is-2 is-narrow-mobile is-fullheight section is-hidden-mobile">
+            <p class="menu-label is-hidden-touch">Navegación</p>
+            <ul class="menu-list">
+                <li>
+                    <a class="navbar-item" asp-controller="Home" asp-action="Index" >
+                        <span class="icon"><i class="fa fa-home"></i></span> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="is-active">
+                        <span class="icon"><i class="fa fa-table"></i></span> Procesos
+                    </a>
+
+                    <ul>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("AddCommodity", "Commodity")'">
+                                <span class="icon is-small"><i class="fa fa-link"></i></span> Mercancia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="location.href='@Url.Action("BillingView", "Billing")'">
+                                <span class="icon is-small"><i class="fa fa-link"></i></span> Factura
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <span class="icon"><i class="fa fa-info"></i></span> Acerca de
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="container column is-10">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </section>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>

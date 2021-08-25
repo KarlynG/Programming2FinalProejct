@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Agregar Mercancia";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Agregar Mercancia</h1>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="FormCommodity" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <label class="label">Elija un Producto</label>
+                        <div class="select is-fullwidth">
+                            <select name="productName">
+                                @foreach (var item in Model.Products)
+                                {
+                                    <option value="@item.Name">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Escribir cantidad a agregar</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Cantidad" name="quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <label class="label">Elija el proveedor</label>
+                        <div class="select is-fullwidth">
+                            <select name="vendorId">
+                                @foreach (var item in Model.Vendors)
+                                {
+                                    <option value="@item.Id">@item.Name</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+

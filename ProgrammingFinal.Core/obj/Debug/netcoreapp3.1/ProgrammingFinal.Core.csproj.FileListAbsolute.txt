@@ -1,0 +1,9 @@
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.deps.json
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.csproj.AssemblyReference.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.AssemblyInfoInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.AssemblyInfo.cs
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.csproj.CoreCompileInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Core\obj\Debug\netcoreapp3.1\ProgrammingFinal.Core.pdb

@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Editar Proveedor";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Escriba los nuevos datos del Proveedor</h1>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="VendorEdit" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <input class="input" type="hidden" name="id" value="@Model.Id">
+                            <label class="label">Nombre del Proveedor</label>
+                            <div class="control">
+                                <input class="input"
+                                       type="text"
+                                       placeholder="Nombre"
+                                       name="name"
+                                       value="@Model.Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Numero de telefono</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Numero de telefono" 
+                                       name="phoneNumber" 
+                                       maxlength="9" 
+                                       value="@Model.PhoneNumber">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Email del Proveedor</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Correo electronico" 
+                                       name="email" 
+                                       value="@Model.email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Cedula</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Cedula" 
+                                       name="document" 
+                                       maxlength="9" 
+                                       value="@Model.Document">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

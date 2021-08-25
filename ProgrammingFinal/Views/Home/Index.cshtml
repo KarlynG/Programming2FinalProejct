@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div data-aos="fade-up">
+    <div class="column">
+        <section class="hero is-info welcome is-small is-fullwidth">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title has-text-centered">
+                        Bienvenido al Sistema de Facturación.
+                    </h1>
+                    <h2 class="subtitle has-text-centered">
+                        Creado por Karlyn Garcia Rojas
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section class="info-tiles">
+            <div class="tile is-ancestor has-text-centered">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">@ViewBag.Products</p>
+                        <p class="subtitle">Productos</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">@ViewBag.Clients</p>
+                        <p class="subtitle">Clientes</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">@ViewBag.Vendor</p>
+                        <p class="subtitle">Proveedores</p>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="title">@ViewBag.Billing</p>
+                        <p class="subtitle">Facturas</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <div class="columns">
+            <div class="column">
+                <div class="card events-card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Eventos
+                        </p>
+                        <a href="#" class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </header>
+                    <div class="card-table">
+                        <div class="content">
+                            <table class="table is-fullwidth is-striped">
+                                <tbody>
+                                    @foreach (var item in Model)
+                                        {
+                                    <tr>
+                                        <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                        <td>@item.Date</td>
+                                        <td>@item.Entry</td>
+                                        <td class="level-right"><a class="button is-small is-primary" href="#">Ver</a></td>
+                                    </tr>
+                                        }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item">Ver todo</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

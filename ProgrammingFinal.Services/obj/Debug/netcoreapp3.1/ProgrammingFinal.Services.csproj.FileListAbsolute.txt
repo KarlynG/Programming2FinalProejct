@@ -1,0 +1,16 @@
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Services.deps.json
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Services.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Services.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Bl.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Model.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Bl.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\bin\Debug\netcoreapp3.1\ProgrammingFinal.Model.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.csproj.AssemblyReference.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.AssemblyInfoInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.AssemblyInfo.cs
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.csproj.CoreCompileInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.csproj.CopyComplete
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Services\obj\Debug\netcoreapp3.1\ProgrammingFinal.Services.pdb

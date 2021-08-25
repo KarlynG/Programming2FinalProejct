@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Editar Producto";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Escriba los nuevos datos del producto</h1>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="ProductEdit" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <input class="input" type="hidden" name="id" value="@Model.Id">
+                            <label class="label">Nombre del producto</label>
+                            <div class="control">
+                                <input class="input"
+                                       type="text"
+                                       placeholder="Producto"
+                                       name="name"
+                                       value="@Model.Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Precio del producto</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Precio" 
+                                       name="price" 
+                                       maxlength="9"
+                                       value="@Model.Price">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Cantidad del producto</label>
+                            <div class="control">
+                                <input class="input" 
+                                       type="text" 
+                                       placeholder="Cantidad" 
+                                       name="quantity" 
+                                       maxlength="9">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+

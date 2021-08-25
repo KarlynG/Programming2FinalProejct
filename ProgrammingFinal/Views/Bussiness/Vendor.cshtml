@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Agregar Proveedor";
+}
+<div class="has-text-centered">
+    <br /><br />
+    <h1 class="title" data-aos="zoom-out">Agregar un Proveedor</h1>
+</div>
+<br />
+<br />
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+    <div class="card-content">
+        <div class="content">
+            <form action="FormVendor" method="post" enctype="multipart/form-data">
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Nombre del Proveedor</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Nombre" name="name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Numero de telefono</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Numero de telefono" name="phoneNumber">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Email del Proveedor</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Correo electronico" name="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="field">
+                            <label class="label">Cedula</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Cedula" name="document">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button is-large is-fullwidth">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

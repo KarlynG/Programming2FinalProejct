@@ -1,0 +1,14 @@
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Bl.deps.json
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Bl.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Bl.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Model.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Model.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\bin\Debug\netcoreapp3.1\ProgrammingFinal.Core.pdb
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.csproj.AssemblyReference.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.AssemblyInfoInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.AssemblyInfo.cs
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.csproj.CoreCompileInputs.cache
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.csproj.CopyComplete
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.dll
+C:\Users\karly\source\repos\ProgrammingFinal\ProgrammingFinal.Bl\obj\Debug\netcoreapp3.1\ProgrammingFinal.Bl.pdb
